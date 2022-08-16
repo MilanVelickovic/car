@@ -1,0 +1,102 @@
+{
+    "display": {
+        "width": 1920,
+        "height": 1080,
+        "fps": 60
+    },
+    "spritesheet": {
+        "car": "./img/car.png",
+        "tracks": [
+            "./img/track_lvl_1.png",
+            "./img/track_lvl_2.png",
+            "./img/track_lvl_3.png"
+        ]
+    },
+    "layer": {
+        "track": 1,
+        "car": 2,
+        "reward-line": 3
+    },
+    "car": {
+        "speed": 6,
+        "angle": 0,
+        "rotation-velocity": 4,
+        "direction": 0,
+        "radar": {
+            "angles": {
+                "narrow": [
+                    -60, -30, 0, 30, 60
+                ],
+                "wide": [
+                    -60, -30, -15, 0, 15, 30, 60
+                ],
+                "ultra-wide": [
+                    -90, -60, -30, -15, 0, 15, 30, 60, 90
+                ]
+            }
+        },
+        "collision": {
+            "range": 25
+        }
+    },
+    "track": {
+        "lvl-1-setup": {
+            "car-position": {
+                "x-coord": 660,
+                "y-coord": 300
+            },
+            "radar-range": 200,
+            "reward-line-positions": [
+                [105, 282, 178, 345],
+                [1307, 151, 1323, 256],
+                [1679, 235, 1575, 311],
+                [1614, 809, 1684, 907],
+                [1469, 868, 1453, 973],
+                [1392, 816, 1268, 851],
+                [1364, 612, 1254, 652],
+                [1223, 508, 1215, 626],
+                [1056, 607, 1154, 663],
+                [142, 611, 39, 636]
+            ],
+            "info-start-position": {
+                "x-coord": 60,
+                "y-coord": 900
+            }
+        },
+        "lvl-2-setup": {
+            "car-position": {
+                "x-coord": 800,
+                "y-coord": 105
+            },
+            "radar-range": 105,
+            "reward-line-positions": [
+            ],
+            "info-start-position": {
+                "x-coord": 60,
+                "y-coord": 960
+            }
+        },
+        "lvl-3-setup": {
+            "car-position": {
+                "x-coord": 600,
+                "y-coord": 160
+            },
+            "radar-range": 160,
+            "reward-line-positions": [
+            ],
+            "info-start-position": {
+                "x-coord": 1500,
+                "y-coord": 50
+            }
+        }
+    },
+    "color": {
+        "grass": "91, 217, 38",
+        "finish-line": "0, 162, 232",
+        "car-sensor": "0, 255, 255",
+        "radar-line": "255, 255, 255",
+        "radar-sensor": "255, 0, 0",
+        "reward-line": "110, 68, 255",
+        "text": "255, 255, 255"
+    }
+}
